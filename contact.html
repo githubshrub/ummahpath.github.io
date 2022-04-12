@@ -165,7 +165,7 @@ $("#contact_form").on("submit", function(e){
     $("#contact_form_btn").html("Sending <img src='img/loader.gif' style='width: 20px; vertical-align: middle;'>")
     $("#contact_form_btn").attr("disabled", true);
     $.ajax({
-      url: "http://localhost:8000/ummahpath_inbox",
+      url: "https://muhammadabir.herokuapp.com/ummahpath_inbox",
       type: "POST",
       data: $(this).serialize(),
       success: function(data){
